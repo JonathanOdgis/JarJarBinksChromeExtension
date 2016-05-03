@@ -1,0 +1,19 @@
+{
+"manifest_version": 2,
+    "name": "Jar Jar Binks Web Experience",
+    "description": "Have you ever wanted to explore the deep reaches of the net as a Gungan ambassador? I didn't think so. Have fun and may the force be with yousa",
+    "version": "0.1",
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "js": [
+                "jquery.js",
+			"content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
